@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+body {
+
+    text-align: center;
+    font-family: 'Vollkorn';
+    background-color: #000;
+    min-height: 100vh;
+     font-size: 18px;
+     color: #fff;
+     margin: 0px;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 0px;
+}
+
+#tours {
+    display: flex;
+   justify-content: center;
+   margin-bottom: 60px;
+
+ 
+}
+
+#tours article {
+    margin: 0px 15px;
+       position: relative;
+}
+
+#tours img {
+
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.tour-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0,0,0,.8);
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.tour-overlay:hover {
+    opacity: 1;
+}
+
+.tour-overlay p {
+    padding: 0px 30px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+
+
+@media (max-width: 1300px) {
+
+    #tours {
+   overflow-x: scroll;
+   justify-content: left;
+ 
+}
+
+
+}
+
+
+#ghost {
+ 
+  transition: opacity 3s, transform 1s;
+  transition-delay: .5s;
+}
+
+#ghost:hover {
+  transform: translateX(150px);
+  opacity: 0;
+  right: 50px;
+}
+
+#book {
+    color: #fff;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+  
+   background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0) ), url('../imgs/ghost-bg.jpeg');
+}
+
+form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+   
+    display: block;
+}
+
+form input {
+    width: 400px;
+    height: 30px;
+    font-family: 'Vollkorn';
+    font-size: 16px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    transition: outline .5s;
+}
+
+form input:focus, form select:focus {
+    outline: 3px solid black;
+}
+
+form select {
+      width: 410px;
+    height: 40px;
+    font-family: 'Vollkorn';
+    font-size: 16px;
+     background-color: #ddd;
+     border: none;
+      border-radius: 5px;
+       transition: outline .5s;
+
+ 
+    
+}
+
+form button {
+    border: none;
+    font-family: 'Vollkorn';
+    font-size: 18px;
+    margin: 20px 0px;
+    padding: 10px 30px;
+    background-color: black;
+    color: orange;
+    border-radius: 5px;
+     outline: 0px solid white;
+    transition: outline .5s;
+}
+
+form button:hover {
+     outline: 3px solid white;
+}
+
+form button:active {
+    transform: translateY(5px);
+}

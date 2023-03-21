@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghost Tours</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="assets/imgs/cartoon-ghost.png">
+  </head>
+  <body>
+    <h1>Ghoulish Ghost Tours</h1>
+    <img id="ghost"
+      src="assets/imgs/cartoon-ghost.png"
+      width="300"
+      alt="A cartoon ghost"
+    />
+    <h2>Choose your tour...</h2>
+    <section id="tours">
+     <article>
+          <img
+            src="assets/imgs/haunted-house-1.png"
+            alt="A spooky white brick house that looks old and crumbling"
+            width="400"
+          />
+          <a href="">
+          <div class="tour-overlay">
+            <h3>Haunted Cottage</h3>
+            <p>
+              This house was abandoned after the owner mysteriously disappeared.
+            </p>
+          </div>
+          </a>
+        </article>
+     
+    <article>
+          <img
+            src="assets/imgs/haunted-house-2.jpeg"
+            alt="Colonial house with people in old style clothing standing outside"
+            width="400"
+            />
+         <a href=""> <div class="tour-overlay">
+            <h3>Haunted Colonial</h3>
+            <p>
+            Legend has it that a disgruntled servant got their revenge in this house.
+            </p>
+          </div>
+          </a>
+        </article>
+     
+      <article>
+          <img
+            src="assets/imgs/haunted-house-3.jpeg"
+            alt="A large eccentric mansion"
+            width="400"
+          />
+          <a href="">
+          <div class="tour-overlay">
+            <h3>Haunted Mansion</h3>
+            <p>
+              The ghost of a exiled king haunts these halls.
+            </p>
+          </div>
+          </a>
+        </article>
+      
+    </section>
+    <section id="book"> 
+    <h2>Book your tour</h2>
+
+    <form action="">
+        <label for="name">Name</label>
+        <input id="name" type="text">
+        <br>
+        <label for="email">Email</label>
+        <input id="email" type="email">
+        <br>
+        <label for="tour">Select your tour</label>
+        <select id="tour">
+            <option>Haunted Cottage</option>
+            <option>Haunted Colonial</option>
+            <option>Haunted Mansion</option>
+        </select><br>
+        <button type="submit">Book Tour</button>
+        <br>
+    </form>
+    </section>
+  </body>
+</html>
