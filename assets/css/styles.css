@@ -18,14 +18,21 @@ h3 {
 
 #tours {
     display: flex;
+    flex-wrap: wrap;
    justify-content: center;
    margin-bottom: 60px;
+    gap: 15px;
+
 
  
 }
 
+#tours a {
+    color: #fff;
+}
+
 #tours article {
-    margin: 0px 15px;
+ 
        position: relative;
 }
 
@@ -78,12 +85,20 @@ h3 {
 
 
 
-@media (max-width: 1300px) {
+@media (max-width: 1024px) {
 
-    #tours {
-   overflow-x: scroll;
-   justify-content: left;
- 
+  
+
+.tour-overlay {
+    position: relative;
+    width: inherit;
+    height: inherit;
+   color: white;
+   opacity: 1;
+}
+
+#tours {
+    gap: 50px;
 }
 
 
